@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="contactform.php" method="POST" class="form">
+            <div class="form-group">
+                <label for="name" class="form-label">Tvoje meno a priezvisko</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Janko Hraško" tabindex="1" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Tvoj Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="abc@gmail.com" tabindex="2" required>
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-label">Tel. číslo</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="+421 911 222 333" tabindex="3" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Správa?</label>
+                <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Text ..." tabindex="4"></textarea>
+            </div>
+            <div>
+                <button onclick="alert('Ďakujeme za správu');" type="submit" name="submit" class="btn">Odoslať správu</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
